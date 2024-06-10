@@ -51,17 +51,29 @@ nav ul li{
     height: 2px;
 }
 
-article{
+article {
     display: block;
-    width: 500px;
+    width: 80%; /* Ajustar al 90% del contenedor padre para asegurarse que no se salga */
+    max-width: 500px; /* Limitar el ancho máximo */
     margin: 50px auto;
-    padding: 10px;
+    padding: 10px; /* Incrementar padding para un mejor espaciado */
     text-align: center;
     border: 1px solid #999999;
-    background: #4e144b;
+    background: linear-gradient(135deg, #4e144b, #301030); /* Gradiente para un fondo más interesante */
     border-radius: 20px;
-    box-shadow: rgb(8, 0, 8) 5px 5px 10px inset;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 5px 5px 10px rgba(8, 0, 8, 0.5); /* Mejorar el box-shadow */
+    color: white; /* Texto blanco para mejor contraste */
+    font-family: 'Arial', sans-serif; /* Fuente más legible */
+    font-size: 15px; /* Tamaño de fuente más grande */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
 }
+
+article:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), inset 5px 5px 15px rgba(8, 0, 8, 0.6); /* Sombra más pronunciada */
+}
+
+
 
 h3{text-align: center;}
 
