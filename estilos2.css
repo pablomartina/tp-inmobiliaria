@@ -1,77 +1,110 @@
-body{
-    background:darkmagenta;
+body {
+    background: darkmagenta;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-#container{
-    width:1100px;
-    margin: 0px auto;
+#container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
     border: 2px solid black;
     background: darkmagenta;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-header{
-    height: 80px;
+header {
+    height: 140px;
     width: 100%;
-    margin: 0px;
     text-align: center;
-    line-height: 60px;
+    line-height: 80px;
     font-size: 30px;
-    background: darkmagenta;
+    background: rgb(139, 0, 139);
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding: 20 10px;  
+    box-sizing: border-box; 
 }
 
-nav{
-    background:black;
+nav {
+    background: black;
+    width: 100%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 50px;
-    border-bottom: 1px solid black;
 }
 
-a{
-    color:white
+nav ul li {
+    margin: 0 10px;
 }
 
-a:hover{
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
     color: red;
 }
 
-nav ul li{
-    float: left;
-    list-style:none;
-    margin: 10px;
-    line-height: 30px;
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
-.clearfix{
-    clear:both;
+#main-content {
+    display: flex;
+    width: 100%;
 }
 
-#content{
-    float:left;
-    width: calc(80% - 80px);
-    min-height: 400px;
-    padding: 40px;
+#content {
+    width: 80%;
+    padding: 20px;
+    text-align: center;
 }
 
-article{
-    color:white;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #eee;
+article {
+    display: block;
+    width: 90%;
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #999999;
+    background: linear-gradient(135deg, #4e144b, #301030);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 5px 5px 10px rgba(8, 0, 8, 0.5);
+    color: white;
+    font-size: 18px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-aside{
-    float:left;
-    width: calc(20% - 20px);
-    min-height: 500px;
-    padding: 10px;
-    background-image: url(obelisco.jpg);
-    background-size: 100%;
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), inset 5px 5px 15px rgba(8, 0, 8, 0.6);
 }
 
-footer{
+h3 {
+    text-align: center;
+}
+
+footer {
     background: black;
     color: white;
     text-align: center;
     height: 50px;
     line-height: 50px;
+    width: 100%;
 }
