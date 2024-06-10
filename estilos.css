@@ -53,24 +53,24 @@ nav ul li{
 
 article {
     display: block;
-    width: 80%; /* Ajustar al 90% del contenedor padre para asegurarse que no se salga */
-    max-width: 500px; /* Limitar el ancho máximo */
+    width: 80%;
+    max-width: 500px; 
     margin: 50px auto;
-    padding: 10px; /* Incrementar padding para un mejor espaciado */
+    padding: 10px; 
     text-align: center;
     border: 1px solid #999999;
-    background: linear-gradient(135deg, #4e144b, #301030); /* Gradiente para un fondo más interesante */
+    background: linear-gradient(135deg, #4e144b, #301030); 
     border-radius: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 5px 5px 10px rgba(8, 0, 8, 0.5); /* Mejorar el box-shadow */
-    color: white; /* Texto blanco para mejor contraste */
-    font-family: 'Arial', sans-serif; /* Fuente más legible */
-    font-size: 15px; /* Tamaño de fuente más grande */
-    transition: transform 0.3s, box-shadow 0.3s; /* Transición suave */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), inset 5px 5px 10px rgba(8, 0, 8, 0.5); 
+    color: white; 
+    font-family: 'Arial', sans-serif; 
+    font-size: 15px; 
+    transition: transform 0.3s, box-shadow 0.3s; 
 }
 
 article:hover {
-    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), inset 5px 5px 15px rgba(8, 0, 8, 0.6); /* Sombra más pronunciada */
+    transform: scale(1.05); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3), inset 5px 5px 15px rgba(8, 0, 8, 0.6); 
 }
 
 
