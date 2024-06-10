@@ -1,0 +1,83 @@
+body{
+    background:darkmagenta;
+}
+
+#container{
+    width:1100px;
+    margin: 0px auto;
+    border: 2px solid black;
+    background: darkmagenta;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    background: darkmagenta;
+}
+
+nav{
+    background:black;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+a{
+    color:white
+}
+
+a:hover{
+    color: red;
+}
+
+nav ul li{
+    float: left;
+    list-style:none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#content{
+    float:left;
+    width: 80%;
+    min-height: 500px;
+    height: 2px;
+}
+
+article{
+    display: block;
+    width: 500px;
+    margin: 50px auto;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #999999;
+    background: #4e144b;
+    border-radius: 20px;
+    box-shadow: rgb(8, 0, 8) 5px 5px 10px inset;
+}
+
+h3{text-align: center;}
+
+aside{
+    float:left;
+    width: calc(20% - 20px);
+    min-height: 500px;
+    padding: 10px;
+    background-image: url(obelisco.jpg);
+    background-size: 100%;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}

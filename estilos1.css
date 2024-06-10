@@ -1,0 +1,120 @@
+body{
+    background:darkmagenta;
+}
+
+#container{
+    width:1100px;
+    margin: 0px auto;
+    border: 2px solid black;
+    background: darkmagenta;
+}
+
+header{
+    height: 80px;
+    width: 100%;
+    margin: 0px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 30px;
+    background: darkmagenta;
+}
+
+nav{
+    background:black;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+a{
+    color:white
+}
+
+a:hover{
+    color: red;
+}
+
+nav ul li{
+    float: left;
+    list-style:none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#content{
+    float:left;
+    width: 80%;
+    min-height: 500px;
+}
+
+article{
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+aside{
+    float:left;
+    width: calc(20% - 20px);
+    height: 550px;
+    padding: 10px;
+    background-image: url(obelisco.jpg);
+    background-size: 100%;
+}
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+.image-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.button {
+    width: 500px;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #120404;
+    border-radius: 20px;
+    box-shadow: rgb(23, 3, 3) 5px 5px;
+    background: #2ac2c2;
+    margin-top: 20px; /* Ajusta el margen superior del botón */
+  }
+
+#content2 {
+    float:center;
+    width: 80%;
+    height: 400px;
+    position: relative;
+    overflow: hidden; /* Asegura que la imagen no se desborde del contenedor */
+    margin-top: 50px;
+}
+
+#content2 img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.button a {
+    font-size: 40px; /* Tamaño original del texto */
+}
+.button a:hover {
+    font-size: 50px; /* Tamaño del texto al pasar el mouse */
+}
