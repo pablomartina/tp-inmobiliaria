@@ -5,6 +5,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria Onix</title>
     <link rel="StyleSheet" href="estilos1.css" type="text/css">
+    <script>
+        function validateForm(event) {
+            event.preventDefault();
+            var form = document.forms['contactForm'];
+            var inputs = form.getElementsByTagName('input');
+            var textarea = form.getElementsByTagName('textarea')[0];
+            var allFieldsFilled = true;
+            var i = 0;
+
+            while (i < inputs.length) {
+                switch (inputs[i].name) {
+                    case 'name':
+                        if (inputs[i].value === '') {
+                            alert('Nombre es requerido.');
+                            allFieldsFilled = false;
+                        }
+                        break;
+                    case 'mail':
+                        if (inputs[i].value === '') {
+                            alert('Email es requerido.');
+                            allFieldsFilled = false;
+                        }
+                        break;
+                    case 'asunto':
+                        if (inputs[i].value === '') {
+                            alert('Teléfono es requerido.');
+                            allFieldsFilled = false;
+                        }
+                        break;
+                }
+                i++;
+            }
+
+            if (textarea.value === '') {
+                alert('Pregunta es requerida.');
+                allFieldsFilled = false;
+            }
+
+            if (allFieldsFilled) {
+                form.submit();
+            }
+        }
+
+        window.onload = function() {
+            document.forms['contactForm'].addEventListener('submit', validateForm);
+        }
+    </script>
 </head>
 <body>
     <div id="container">
@@ -48,12 +95,12 @@
             <p> <b>
                 Email: onixpropiedades@gmail.com
             </b></p>
-            <p><form class="contact-form" action="X" method="get"></p>
-            <p><input type="text" name="name" placeholder="Nombre"></p>
-            <p><input type="text" name="mail" placeholder="Mail"></p>
-            <p><input type="text" name="asunto" placeholder="Teléfono"></p>
-            <p><textarea name="mensaje" placeholder="Pregunta"></textarea></p>
-            <p><button type="submit" name="submit">Enviar</button></p>
+            <form name="contactForm" class="contact-form" action="X" method="get">
+                <p><input type="text" name="name" placeholder="Nombre"></p>
+                <p><input type="text" name="mail" placeholder="Email"></p>
+                <p><input type="text" name="asunto" placeholder="Teléfono"></p>
+                <p><textarea name="mensaje" placeholder="Pregunta"></textarea></p>
+                <p><button type="submit" name="submit">Enviar</button></p>
             </form>
             </article>
 
@@ -63,21 +110,13 @@
 
         <aside>
             <h2>Localidades CABA:</h2>
-            <li>
-                San Nicolas
-            </li>
-            <li>
-                Recoleta
-            </li>
-            <li>
-                San Telmo
-            </li>
-            <li>
-                Monserrat
-            </li>
-            <li>
-                Retiro
-            </li>
+            <ul>
+                <li>San Nicolas</li>
+                <li>Recoleta</li>
+                <li>San Telmo</li>
+                <li>Monserrat</li>
+                <li>Retiro</li>
+            </ul>
             <h3>¡Tu Proxima Vivienda a tan solo un Click!</h3>
         </aside>
 
