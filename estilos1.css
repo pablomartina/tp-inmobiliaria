@@ -73,12 +73,6 @@ footer{
     line-height: 50px;
 }
 
-.image-container {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
   
 .image-container img {
     max-width: 100%;
@@ -93,8 +87,8 @@ footer{
     border: 1px solid #120404;
     border-radius: 20px;
     box-shadow: rgb(23, 3, 3) 5px 5px;
-    background: #000000
-    margin-top: 20px; 
+    background: #2ac2c2;
+    margin-top: 20px;
   }
 
 #content2 {
