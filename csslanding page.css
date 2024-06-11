@@ -1,0 +1,82 @@
+body{
+    background:darkmagenta;
+}
+
+#container{
+    width:1100px;
+    margin: 0px auto;
+    border: 2px solid black;
+    background: darkmagenta;
+}
+
+
+
+nav{
+    background:black;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+a{
+    color:white
+}
+
+a:hover{
+    color: red;
+}
+
+nav ul li{
+    float: left;
+    list-style:none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear:both;
+}
+
+#content{
+    float:left;
+    width: 80%;
+    min-height: 500px;
+}
+
+article{
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+}
+
+
+footer{
+    background: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+
+  
+.image-container img {
+    max-width: 40%;
+  }
+
+.button {
+    width: 500px;
+    height: auto;
+    margin: 50px auto;
+    text-align: center;
+    border: 1px solid #120404;
+    border-radius: 20px;
+    box-shadow: rgb(23, 3, 3) 5px 5px;
+    background: #2ac2c2;
+    margin-top: 20px; /* Ajusta el margen superior del botón */
+}
+
+.button a {
+    font-size: 40px; /* Tamaño original del texto */
+}
+.button a:hover {
+    font-size: 50px; /* Tamaño del texto al pasar el mouse */
+}
