@@ -4,38 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inmobiliaria Onix</title>
-    <link rel="stylesheet" href="estilos1.css" type="text/css">
+    <link rel="stylesheet" href="csslanding page.css" type="text/css">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 </head>
 <body>
     <div id="container">
-        <header>
-            <h1>Onix</h1>
-        </header>
-        <nav>
-           <ul>
-            <li>
-                <a href="index.html">
-                    Inicio
-                </a>
-            </li>
-            <li>
-                <a href="quienessomos.html">
-                    Quienes Somos
-                </a>
-            </li>
-            <li>
-                <a href="iniciarsesion.html">
-                    Iniciar Sesion
-                </a>
-            </li>
-            <li>
-                <a href="contactenos.html">
-                    Contactenos
-                </a>
-            </li>
-           </ul>
-        </nav>
 
         <div class="clearfix"></div>
 
@@ -49,7 +22,6 @@
 
         </div>
 
-        <!-- Coloca el botón fuera del contenedor de la imagen -->
         <p class="button"><a href="index.html">Ver propiedades</a></p>
 
         <footer>
@@ -57,37 +29,6 @@
         </footer>
     </div>
 
-    <script>
-        $(function(){
-            // Define la función para animar la imagen
-            function animateImage() {
-                // Obtiene la anchura del contenedor
-                var containerWidth = $("#content2").width();
-                
-                // Define la animación de la imagen
-                $("#moving-image").animate({
-                    left: containerWidth - $("#moving-image").width() // Mueve la imagen a la derecha del contenedor
-                }, 3000, function() {
-                    // Cuando la animación termina, resetea la posición de la imagen
-                    $(this).css("left", 0);
-                    // Llama a la función de animación nuevamente para crear un bucle
-                    animateImage();
-                });
-            }
-
-            // Llama a la función de animación
-            animateImage();
-
-            // Controlador de eventos para el mouse entrante y saliente
-            $(".button").hover(function(){
-                // Aumenta el tamaño del botón al pasar el mouse
-                $(this).find("a").css("font-size", "50px");
-            }, function(){
-                // Restaura el tamaño original del botón al sacar el mouse
-                $(this).find("a").css("font-size", "40px");
-            });
-        });
-    </script>
-    
 </body>
 </html>
+
