@@ -8,11 +8,11 @@
     <script>
         function validateForm(event) {
             event.preventDefault();
-            var form = document.forms['contactForm'];
-            var inputs = form.getElementsByTagName('input');
-            var textarea = form.getElementsByTagName('textarea')[0];
-            var allFieldsFilled = true;
-            var i = 0;
+            let form = document.forms['contactForm'];
+            let inputs = form.getElementsByTagName('input');
+            let textarea = form.getElementsByTagName('textarea')[0];
+            let allFieldsFilled = true;
+            let i = 0;
 
             while (i < inputs.length) {
                 switch (inputs[i].name) {
